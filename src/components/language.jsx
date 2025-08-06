@@ -19,7 +19,7 @@ const LanguageSwitcher = () => {
                 animate={languageModal ? { y: 80, opacity: 1, display: "flex" } : { y: 60, opacity: 0, display: "none" }}
                 className={styles.LanguageModal}>
                 <button onClick={() => {setLanguage("en"), setLanguageModal(false)}}><Image src='/en.svg' alt="en" width={21} height={15}/> English</button>
-                <button onClick={() => changeLanguage("ru")}><Image src='/ru.svg' alt="ru" width={21} height={15}/> Русский</button>
+                <button onClick={() => {setLanguage("ru"), setLanguageModal(false)}}><Image src='/ru.svg' alt="ru" width={21} height={15}/> Русский</button>
             </motion.div>
         </div>
     );
